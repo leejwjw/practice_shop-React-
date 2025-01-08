@@ -8,6 +8,4 @@ const jwtAxios = axios.create();
 
 // response 전
 
-// response fail
-
-
+// response faildfsdf
