@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useCustomLogin from '../../hooks/useCustomLogin';
+import KakaoLoginComponent from './KakaoLoginComponent';
 
 const initState = {
   email: '',
@@ -116,7 +117,7 @@ const LoginComponent = () => {
           </div>
 
           {/* 소셜로그인 */}
-          <kakaoLogin />
+          <KakaoLoginComponent />
         </div>
 
         <p className="mt-10 text-center text-sm/6 text-gray-500">

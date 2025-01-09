@@ -30,10 +30,10 @@ const loginSlice = createSlice({
     // action 크리에이터 + 리듀서 로직
     login: (state, action) => {
       console.log('login.....');
-      // {email, password} 전달받은 값 꺼내기
+      // * 수정 : 소셜로그인시 리액트 상에서 로그인처리 = 쿠키에 추가
       const data = action.payload;
-      // 새로운 state값 리턴
-      return { email: data.email };
+      setCookie('member', JSON.stringify(data), 1); // 1일
+      return data; // 수정
     },
     logout: (state, action) => {
       console.log('logout!!');
