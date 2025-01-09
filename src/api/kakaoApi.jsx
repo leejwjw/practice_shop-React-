@@ -4,7 +4,7 @@ import axios from 'axios';
 import { API_SERVER_HOST } from './todoApi';
 
 // 내 카카오 REST API 키
-const REST_API_KEY = `60ed3117ce4d8eb9a93a7fb381f9421c`;
+const REST_API_KEY = `b278c7e34b9d34c38621612a08be2819`;
 
 // Redirect URI
 const REDIRECT_URI = `http://localhost:5173/member/kakao`;
